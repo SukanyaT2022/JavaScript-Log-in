@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    form {
+        border: 2px solid green;
+        width: 500px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* change  inline to top to bottom*/
+    }
+
+    input {
+        margin: 5px 0px;
+        width: 80%;
+        padding: 10px;
+    }
+
+    /*below is button part# for id*/
+    #check {
+        background-color: lightcoral;
+        color: white;
+        margin: 10px 0px;
+        padding: 15px 25px;
+    }
+</style>
+
+<body>
+    <form>
+        <h1>Log In Form</h1>
+        <input type="text" placeholder="Enter your name" id="UserName">
+        <input type="password" placeholder="Enter your password" id="password">
+        <!--below is confirm section- if password is matched-->
+        <input type="password" placeholder="confirm your password" id="passwordConfirm">
+        <!--below line is show password in letter and number-->
+        <input type="checkbox" onclick="showPassword(),showConfirmPassword() "> <!--""is function name in js-->
+        <!--below is javascript link with this button -onclick-->
+
+        <button id="check" onclick="logIn()">submit</button>
+    </form>
+
+</body>
+<script src="logInwithManyUsers.js">
+
+</script>
+
+</html>
